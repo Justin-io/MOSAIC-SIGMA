@@ -1,0 +1,28 @@
+#VRML V2.0 utf8
+# Project MOSAIC-Sigma 3D Component Model
+Group {
+  children [
+    Transform {
+      translation 0.0 0.0 0.6000
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.15 0.15 0.15 specularColor 0.5 0.5 0.5 shininess 0.3 }
+          }
+          geometry Box { size 7.5000 13.0000 1.2000 }
+        }
+      ]
+    }
+    Transform {
+      translation -2.7500 -5.5000 1.3000
+      children [
+        Shape {
+          appearance Appearance {
+            material Material { diffuseColor 0.9 0.9 0.9 specularColor 1.0 1.0 1.0 shininess 0.9 }
+          }
+          geometry Sphere { radius 0.4 }
+        }
+      ]
+    }
+  ]
+}

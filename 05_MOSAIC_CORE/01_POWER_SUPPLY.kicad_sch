@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6c455aaf-a5b7-47cd-a6e3-663949ab66c0")
+	(paper "A4")
+	(title_block
+		(title "MOSAIC-CORE: POWER CONVERSION & SEQUENCING")
+		(date "2026-11-18")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(text "POWER REGULATION ARCHITECTURE:\n- +12V DC Input via Auxiliary Jack\n- LTC3888 Dual-Phase Sync Buck -> 0.85V VCCINT @ 15A (<10mV ripple)\n- TPS548D22 Sync Buck -> 1.2V DDR4 @ 3A\n- TPS7A4700 Ultra-Low Noise LDO -> 1.8V VCCAUX\n- TPS54302 Buck -> 3.3V System IO\n- ADM1266 Sequencer: 0.85V -> 1.8V -> 1.2V -> 3.3V Power-Up Cascade" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "cb613b28-f86a-40a7-99f1-c572f36f2232"))
+)

@@ -1,95 +1,13 @@
-ERC report (2026-11-18T02:17:41+0530, Encoding UTF8)
+ERC report (2026-11-18T02:34:34+0530, Encoding UTF8)
 
 ***** Sheet /
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 90.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 90.00 mm): Label 'VCCINT_0V85'
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 98.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 98.00 mm): Label 'DDR4_1V2'
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 106.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 106.00 mm): Label 'VCCAUX_1V8'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 90.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 114.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 114.00 mm): Label 'SYS_3V3'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 98.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 122.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 122.00 mm): Label 'GND'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 106.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 130.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 130.00 mm): Label 'TRIG_SYNC_P'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 114.00 mm): Horizontal Wire, length 40.00 mm
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 122.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 138.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 138.00 mm): Label 'TRIG_SYNC_N'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 130.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 146.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 146.00 mm): Label 'ADC_D0'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 138.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 154.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 154.00 mm): Label 'ADC_D1'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 146.00 mm): Horizontal Wire, length 40.00 mm
-[endpoint_off_grid]: Symbol pin or wire end off connection grid
-    ; warning
-    @(30.00 mm, 162.00 mm): Horizontal Wire, length 40.00 mm
-[label_dangling]: Label not connected to anything
-    ; error
-    @(30.00 mm, 162.00 mm): Label 'ADC_CLK'
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 154.00 mm): Horizontal Wire, length 40.00 mm
-[unconnected_wire_endpoint]: Unconnected wire endpoint
-    ; warning
-    @(30.00 mm, 162.00 mm): Horizontal Wire, length 40.00 mm
 
- ** ERC messages: 30  Errors 10  Warnings 20
+***** Sheet /PowerSupply/
+
+***** Sheet /DDR4Memory/
+
+***** Sheet /ZynqBankIO/
+
+***** Sheet /Mezzanines/
+
+ ** ERC messages: 0  Errors 0  Warnings 0

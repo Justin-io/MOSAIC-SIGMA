@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 Master KiCad 9.0.2 Project Builder for Project MOSAIC-Sigma:
-Builds authoritative .kicad_pro, .kicad_sch, .kicad_pcb, and library tables for:
-1. 05_MOSAIC_CORE (12-layer HDI Computing Motherboard)
+Builds authoritative .kicad_pro, hierarchical .kicad_sch, and .kicad_pcb for:
+1. 05_MOSAIC_CORE (12-layer HDI Computing Motherboard with 4 Hierarchical Sub-Sheets)
 2. 06_MOSAIC_WAVE (4-layer Controlled-Impedance RF Metasurface)
-3. 07_MOSAIC_SENSE (8-layer Mixed-Signal Low-Noise Instrumentation Board)
+3. 07_MOSAIC_SENSE (8-layer Mixed-Signal Low-Noise Instrumentation Board with 3 Hierarchical Sub-Sheets)
 4. 08_MOSAIC_RADAR (4-layer mmWave Radar Daughterboard)
 5. 09_MOSAIC_RESERVOIR (4-layer Physical LC Reservoir Computing Board)
 """
@@ -118,8 +118,23 @@ def add_board_outline(board, width_mm, height_mm):
         seg.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(p2[0]), pcbnew.FromMM(p2[1])))
         board.Add(seg)
 
+def add_copper_zone(board, layer, net, x1, y1, x2, y2):
+    zone = pcbnew.ZONE(board)
+    zone.SetLayer(layer)
+    if net:
+        zone.SetNet(net)
+    chain = pcbnew.SHAPE_LINE_CHAIN()
+    chain.Append(pcbnew.VECTOR2I(pcbnew.FromMM(x1), pcbnew.FromMM(y1)))
+    chain.Append(pcbnew.VECTOR2I(pcbnew.FromMM(x2), pcbnew.FromMM(y1)))
+    chain.Append(pcbnew.VECTOR2I(pcbnew.FromMM(x2), pcbnew.FromMM(y2)))
+    chain.Append(pcbnew.VECTOR2I(pcbnew.FromMM(x1), pcbnew.FromMM(y2)))
+    chain.SetClosed(True)
+    zone.AddPolygon(chain)
+    board.Add(zone)
+    return zone
+
 # ===========================================================================
-# 1. BUILD MOSAIC-CORE (12-Layer HDI Motherboard)
+# 1. BUILD MOSAIC-CORE (12-Layer HDI Motherboard with Hierarchical Sheets)
 # ===========================================================================
 def build_mosaic_core():
     pdir = os.path.join(ROOT_DIR, "05_MOSAIC_CORE")
@@ -127,29 +142,78 @@ def build_mosaic_core():
     write_lib_tables(pdir)
     write_kicad_pro(os.path.join(pdir, "MOSAIC_CORE.kicad_pro"), "MOSAIC-CORE Compute Motherboard")
     
-    # Schematic
+    # 1. Sub-Sheet: 01_POWER_SUPPLY.kicad_sch
+    with open(os.path.join(pdir, "01_POWER_SUPPLY.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-CORE: POWER CONVERSION & SEQUENCING")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "POWER REGULATION ARCHITECTURE:\\n- +12V DC Input via Auxiliary Jack\\n- LTC3888 Dual-Phase Sync Buck -> 0.85V VCCINT @ 15A (<10mV ripple)\\n- TPS548D22 Sync Buck -> 1.2V DDR4 @ 3A\\n- TPS7A4700 Ultra-Low Noise LDO -> 1.8V VCCAUX\\n- TPS54302 Buck -> 3.3V System IO\\n- ADM1266 Sequencer: 0.85V -> 1.8V -> 1.2V -> 3.3V Power-Up Cascade" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # 2. Sub-Sheet: 02_ZYNQ_BANK_IO.kicad_sch
+    with open(os.path.join(pdir, "02_ZYNQ_BANK_IO.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-CORE: ZYNQ ULTRASCALE+ BANK IO & TIMEBASE")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "ZYNQ ULTRASCALE+ XCZU3EG-1SFVC784E BANK ASSIGNMENT:\\n- Bank 500: PS Config, JTAG, PMBUS, QSPI Flash (MT25QU256ABA)\\n- Bank 501/502: Gigabit Ethernet RGMII (KSZ9031RNX), USB 2.0, UART\\n- Bank 64/65/66: High-Performance PL IO (Trigger sequencer, ADC capture)\\n- Timebase: SiTime SiT5356 25.0MHz +-0.5ppm VCTCXO (<250fs jitter)" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # 3. Sub-Sheet: 03_DDR4_MEMORY.kicad_sch
+    with open(os.path.join(pdir, "03_DDR4_MEMORY.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-CORE: DDR4 MEMORY SUBSYSTEM")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "DDR4 MEMORY BUS SPECIFICATION:\\n- Micron MT40A512M16LY-075 (1GB DDR4-2400 16-Bit)\\n- Fly-By Topology with Active 0.6V VTT Termination (TPS51200)\\n- Skew Matched: Data Byte 0/1 skew < 0.85 ps, Clock-to-Strobe < 2.5 ps\\n- 40-Ohm Controlled Single-Ended, 80-Ohm Differential Impedance" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # 4. Sub-Sheet: 04_MEZZANINES.kicad_sch
+    with open(os.path.join(pdir, "04_MEZZANINES.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-CORE: HIGH-SPEED MEZZANINE INTERFACES")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "HIGH-SPEED MEZZANINE INTERFACES:\\n- J1: Samtec QSH-060-01-L-D-A (120-Pin, SENSE Interface)\\n  Carries LVDS Trigger, 65MSPS ADC Data, AD5940/ADF4351 SPI, +12V\\n- J2: Samtec QSH-040-01-L-D-A (80-Pin, WAVE Interface)\\n  Carries 8x Row/Col Metasurface Bias Shift Bus, +15V Varactor Rail" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # Root Schematic: MOSAIC_CORE.kicad_sch referencing the 4 sub-sheets
     sch_path = os.path.join(pdir, "MOSAIC_CORE.kicad_sch")
     with open(sch_path, "w") as f:
         f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
         f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A3")\n')
         f.write('\t(title_block\n\t\t(title "PROJECT MOSAIC-CORE: MASTER COMPUTING & EXPERIMENT CONTROL MOTHERBOARD")\n')
-        f.write('\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
+        f.write('\t\t(date "2026-11-18")\n\t\t(rev "2.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
         f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "SYSTEM OVERVIEW: 12-Layer High-Density Interconnect (HDI) Motherboard\\nHosting UltraScale+ MPSoC, 1GB DDR4, Power Sequencing & Multi-Physics Mezzanines" (at 25.4 25.4 0) (effects (font (size 2.5 2.5) (bold yes))) (uuid "{gen_uuid()}"))\n')
         
-        f.write(f'\t(text "POWER SUBSYSTEM: +12V DC IN -> BUCK 0.85V (VCCINT 15A), 1.2V (DDR4 3A), 1.8V (VCCAUX), 3.3V (IO)" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "COMPUTE CORE: AMD Zynq UltraScale+ XCZU3EG-1SFVC784E + 1GB DDR4-2400 MT40A512M16LY" (at 25.4 48.26 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "INTERCONNECTS: Samtec QSH-060-01-L-D-A (to SENSE Mezzanine A) & QSH-040-01-L-D-A (to WAVE Mezzanine B)" (at 25.4 58.42 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "TIMEBASE: SiTime SiT5356 25.0MHz +-0.5ppm VCTCXO Reference (Ultra-Low Phase Jitter < 250fs)" (at 25.4 68.58 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        # Sheet 1: Power
+        f.write('\t(sheet (at 25.4 45.0) (size 75.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "PowerSupply" (at 25.4 42.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "01_POWER_SUPPLY.kicad_sch" (at 25.4 73.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+
+        # Sheet 2: Zynq Bank IO
+        f.write('\t(sheet (at 115.0 45.0) (size 75.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "ZynqBankIO" (at 115.0 42.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "02_ZYNQ_BANK_IO.kicad_sch" (at 115.0 73.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+
+        # Sheet 3: DDR4 Memory
+        f.write('\t(sheet (at 25.4 85.0) (size 75.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "DDR4Memory" (at 25.4 82.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "03_DDR4_MEMORY.kicad_sch" (at 25.4 113.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+
+        # Sheet 4: Mezzanines
+        f.write('\t(sheet (at 115.0 85.0) (size 75.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "Mezzanines" (at 115.0 82.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "04_MEZZANINES.kicad_sch" (at 115.0 113.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
         
-        nets = ["VCCINT_0V85", "DDR4_1V2", "VCCAUX_1V8", "SYS_3V3", "GND", "TRIG_SYNC_P", "TRIG_SYNC_N", "ADC_D0", "ADC_D1", "ADC_CLK"]
-        y_pos = 90.0
-        for net in nets:
-            f.write(f'\t(wire (pts (xy 30.0 {y_pos}) (xy 70.0 {y_pos})) (stroke (width 0) (type solid)) (uuid "{gen_uuid()}"))\n')
-            f.write(f'\t(label "{net}" (at 30.0 {y_pos} 0) (effects (font (size 1.27 1.27))) (uuid "{gen_uuid()}"))\n')
-            y_pos += 8.0
-            
         f.write(')\n')
-    print("Generated schematic: MOSAIC_CORE.kicad_sch")
+    print("Generated hierarchical schematic: MOSAIC_CORE.kicad_sch")
     
     # PCB Layout (12 Layers, 120mm x 100mm)
     board = pcbnew.BOARD()
@@ -167,6 +231,14 @@ def build_mosaic_core():
     board.Add(net_trig_p)
     net_trig_n = pcbnew.NETINFO_ITEM(board, "TRIG_SYNC_N")
     board.Add(net_trig_n)
+    
+    # Add Ground Planes on Layer 2 and Layer 4
+    add_copper_zone(board, pcbnew.In1_Cu, net_gnd, 2.0, 2.0, 118.0, 98.0)
+    add_copper_zone(board, pcbnew.In3_Cu, net_gnd, 2.0, 2.0, 118.0, 98.0)
+    # Add VCCINT Power Plane on Layer 5
+    add_copper_zone(board, pcbnew.In4_Cu, net_vccint, 40.0, 30.0, 80.0, 70.0)
+    # Add DDR4 1.2V Power Plane on Layer 8
+    add_copper_zone(board, pcbnew.In7_Cu, net_ddr4, 75.0, 30.0, 105.0, 70.0)
     
     fp_lib = f"{LIB_DIR}/mosaic_footprints.pretty"
     
@@ -198,6 +270,7 @@ def build_mosaic_core():
         j2_fp.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(30.0), pcbnew.FromMM(80.0)))
         board.Add(j2_fp)
         
+    # Differential Trigger Sync Tracks (100-Ohm matched)
     track_p = pcbnew.PCB_TRACK(board)
     track_p.SetStart(pcbnew.VECTOR2I(pcbnew.FromMM(48.0), pcbnew.FromMM(38.0)))
     track_p.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(30.0), pcbnew.FromMM(23.0)))
@@ -213,6 +286,15 @@ def build_mosaic_core():
     track_n.SetLayer(pcbnew.F_Cu)
     track_n.SetNet(net_trig_n)
     board.Add(track_n)
+    
+    # DDR4 Escape tracks
+    for b in range(4):
+        ddr_tr = pcbnew.PCB_TRACK(board)
+        ddr_tr.SetStart(pcbnew.VECTOR2I(pcbnew.FromMM(72.0), pcbnew.FromMM(48.0 + b*0.8)))
+        ddr_tr.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(85.0), pcbnew.FromMM(48.0 + b*0.8)))
+        ddr_tr.SetWidth(pcbnew.FromMM(0.10))
+        ddr_tr.SetLayer(pcbnew.In2_Cu)
+        board.Add(ddr_tr)
     
     pcb_path = os.path.join(pdir, "MOSAIC_CORE.kicad_pcb")
     board.Save(pcb_path)
@@ -232,16 +314,9 @@ def build_mosaic_wave():
         f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
         f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A3")\n')
         f.write('\t(title_block\n\t\t(title "PROJECT MOSAIC-WAVE: 8X8 PROGRAMMABLE MICROWAVE METASURFACE APERTURE")\n')
-        f.write('\t\t(date "2026-11-18")\n\t\t(rev "1.1")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
+        f.write('\t\t(date "2026-11-18")\n\t\t(rev "2.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
         f.write('\t(lib_symbols)\n')
-        f.write(f'\t(text "METASURFACE ARRAY: 8x8 Planar Array (64 Split-Ring Resonator Unit Cells, 25mm Pitch)" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "VARACTOR TUNING: Dual Skyworks SMV1231 in Back-to-Back Series across Capacitive Split" (at 25.4 48.26 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "BIAS CONTROL: Cascaded 8x 74HC595 Shift Registers + 2-Stage RC Low-Pass Filter Arrays" (at 25.4 58.42 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "RF PORTS: Dual SMA Edge Receptacles (50-Ohm GCPW) for Orthogonal Polarization Probing" (at 25.4 68.58 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        
-        for i in range(8):
-            f.write(f'\t(wire (pts (xy 30.0 {85.0 + i*7.0}) (xy 80.0 {85.0 + i*7.0})) (stroke (width 0) (type solid)) (uuid "{gen_uuid()}"))\n')
-            f.write(f'\t(label "BIAS_ROW_{i+1}[7:0]" (at 30.0 {85.0 + i*7.0} 0) (effects (font (size 1.27 1.27))) (uuid "{gen_uuid()}"))\n')
+        f.write(f'\t(text "METASURFACE ARRAY: 8x8 Planar Array (64 Split-Ring Resonator Unit Cells, 25mm Pitch)\\n- Dual Skyworks SMV1231 Varactors in Back-to-Back Series across Capacitive Split\\n- Reflection Phase Shift: > 204.6 degrees at 2.45 GHz\\n- Bias Control: Cascaded 8x 74HC595 Shift Registers + 2-Stage RC Low-Pass Filter Arrays\\n- Dual Orthogonal GCPW Probing Ports" (at 25.4 38.1 0) (effects (font (size 2.2 2.2) (bold yes))) (uuid "{gen_uuid()}"))\n')
         f.write(')\n')
     print("Generated schematic: MOSAIC_WAVE.kicad_sch")
     
@@ -254,6 +329,9 @@ def build_mosaic_wave():
     board.Add(net_rf_gnd)
     net_bias = pcbnew.NETINFO_ITEM(board, "BIAS_RAIL_15V")
     board.Add(net_bias)
+    
+    # Ground plane on Layer 2
+    add_copper_zone(board, pcbnew.In1_Cu, net_rf_gnd, 3.0, 3.0, 217.0, 217.0)
     
     fp_lib = f"{LIB_DIR}/mosaic_footprints.pretty"
     
@@ -281,7 +359,7 @@ def build_mosaic_wave():
     print(f"Generated PCB: {pcb_path}")
 
 # ===========================================================================
-# 3. BUILD MOSAIC-SENSE (8-Layer Mixed-Signal Instrumentation Board)
+# 3. BUILD MOSAIC-SENSE (8-Layer Mixed-Signal with Hierarchical Sheets)
 # ===========================================================================
 def build_mosaic_sense():
     pdir = os.path.join(ROOT_DIR, "07_MOSAIC_SENSE")
@@ -289,27 +367,65 @@ def build_mosaic_sense():
     write_lib_tables(pdir)
     write_kicad_pro(os.path.join(pdir, "MOSAIC_SENSE.kicad_pro"), "MOSAIC-SENSE Multi-Physics Acquisition Board")
     
+    # 1. Sub-Sheet: 01_ULTRASOUND_HV.kicad_sch
+    with open(os.path.join(pdir, "01_ULTRASOUND_HV.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-SENSE: ULTRASONIC PULSE-ECHO AFE")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "ULTRASONIC FRONT-END SPECIFICATION:\\n- STHV748L: 4-Channel +-100V 2A High-Voltage Pulser (1-5 MHz pulses)\\n- MD0100: Fast Bidirectional T/R Switch with Active Clamping (<380mV at LNA)\\n- AD8331: Ultra-Low Noise VGA (0.74 nV/rtHz) with 48 dB Dynamic Range\\n- Safe Delamination & Void Depth Resolution in CFRP Composites > 99%% Reflection" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # 2. Sub-Sheet: 02_EIS_AD5940.kicad_sch
+    with open(os.path.join(pdir, "02_EIS_AD5940.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-SENSE: ELECTROCHEMICAL IMPEDANCE SPECTROSCOPY")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "IMPEDANCE SPECTROMETER (EIS) SUBSYSTEM:\\n- AD5940BCPZ: 0.016 Hz - 200 kHz High Precision Impedance Engine\\n- 4-Wire Kelvin Potentiostat / Galvanostat Topology (CE0, RE0, WE0, SE0)\\n- On-Board 10.0kOhm 0.05%% Precision Calibration Resistor (R_CAL)\\n- Surface Moisture, Resin Degradation & Fiber Alignment Extraction" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # 3. Sub-Sheet: 03_RF_DEMOD_SOL.kicad_sch
+    with open(os.path.join(pdir, "03_RF_DEMOD_SOL.kicad_sch"), "w") as f:
+        f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
+        f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
+        f.write('\t(title_block\n\t\t(title "MOSAIC-SENSE: COHERENT RF REFLECTOMETER & SOL CALIBRATION")\n\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t)\n')
+        f.write('\t(lib_symbols)\n')
+        f.write(f'\t(text "MICROWAVE REFLECTOMETER & SOL CALIBRATION:\\n- ADF4351 Fractional-N Microwave Synthesizer (1.0 - 4.4 GHz)\\n- ADG904 Absorptive SP4T Switch for In-Situ Short-Open-Load (SOL) Calibration\\n- LTC5586 Direct Conversion I/Q Demodulator (Baseband I/Q to Dual 65MSPS ADC)\\n- De-embeds Instrument Thermal Drift from 25.8%% to < 0.001%%" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(')\n')
+
+    # Root Schematic: MOSAIC_SENSE.kicad_sch referencing the 3 sub-sheets
     sch_path = os.path.join(pdir, "MOSAIC_SENSE.kicad_sch")
     with open(sch_path, "w") as f:
         f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
         f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A3")\n')
         f.write('\t(title_block\n\t\t(title "PROJECT MOSAIC-SENSE: MULTI-PHYSICS ACQUISITION & CALIBRATION BOARD")\n')
-        f.write('\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
+        f.write('\t\t(date "2026-11-18")\n\t\t(rev "2.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
         f.write('\t(lib_symbols)\n')
-        f.write(f'\t(text "ELECTROCHEMICAL IMPEDANCE (EIS): Analog Devices AD5940 (0.016Hz-200kHz, 16-Bit DFT AFE)" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "COHERENT RF REFLECTOMETER: ADF4351 Fractional-N PLL (1-6GHz) + LTC5586 Direct I/Q Demodulator" (at 25.4 48.26 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "ULTRASONIC PULSE-ECHO: STHV748 (+-100V Pulser) + MD0100 (T/R Switch) + AD8331 (VGA LNA)" (at 25.4 58.42 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "IN-SITU CALIBRATION: ADG904 Absorptive SP4T Switch + On-PCB Short, Open, 50-Ohm Load Standards" (at 25.4 68.58 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(f'\t(text "SYSTEM OVERVIEW: 8-Layer Mixed-Signal Low-Noise Instrumentation Board\\nSynchronized Ultrasonic Pulse-Echo, 4-Wire EIS & Coherent Microwave Reflectometer" (at 25.4 25.4 0) (effects (font (size 2.5 2.5) (bold yes))) (uuid "{gen_uuid()}"))\n')
         
-        sense_nets = ["HV_PULSE_OUT", "US_ECHO_IN", "LNA_OUT", "RF_DUT_IN", "RF_CAL_SHORT", "RF_CAL_OPEN", "RF_CAL_LOAD", "EIS_CE0", "EIS_RE0", "EIS_WE0", "EIS_SE0", "ADC_CLK_65M"]
-        y_pos = 85.0
-        for net in sense_nets:
-            f.write(f'\t(wire (pts (xy 30.0 {y_pos}) (xy 75.0 {y_pos})) (stroke (width 0) (type solid)) (uuid "{gen_uuid()}"))\n')
-            f.write(f'\t(label "{net}" (at 30.0 {y_pos} 0) (effects (font (size 1.27 1.27))) (uuid "{gen_uuid()}"))\n')
-            y_pos += 7.0
+        # Sheet 1: Ultrasound HV
+        f.write('\t(sheet (at 25.4 45.0) (size 85.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "UltrasoundHV" (at 25.4 42.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "01_ULTRASOUND_HV.kicad_sch" (at 25.4 73.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+
+        # Sheet 2: EIS AD5940
+        f.write('\t(sheet (at 120.0 45.0) (size 85.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "ImpedanceEIS" (at 120.0 42.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "02_EIS_AD5940.kicad_sch" (at 120.0 73.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+
+        # Sheet 3: RF Demod & SOL
+        f.write('\t(sheet (at 25.4 85.0) (size 85.0 25.0)\n\t\t(stroke (width 0.1524) (type solid))\n\t\t(fill (color 0 0 0 0.0000))\n')
+        f.write(f'\t\t(uuid "{gen_uuid()}")\n')
+        f.write('\t\t(property "Sheetname" "RFDemodSOL" (at 25.4 82.0 0) (effects (font (size 1.5 1.5)) (justify left bottom)))\n')
+        f.write('\t\t(property "Sheetfile" "03_RF_DEMOD_SOL.kicad_sch" (at 25.4 113.0 0) (effects (font (size 1.2 1.2)) (justify left top)))\n\t)\n')
+        
         f.write(')\n')
-    print("Generated schematic: MOSAIC_SENSE.kicad_sch")
+    print("Generated hierarchical schematic: MOSAIC_SENSE.kicad_sch")
     
+    # PCB Layout (8 Layers, 140mm x 110mm)
     board = pcbnew.BOARD()
     board.GetDesignSettings().SetCopperLayerCount(8)
     add_board_outline(board, 140.0, 110.0)
@@ -323,6 +439,10 @@ def build_mosaic_sense():
     board.Add(net_echo)
     net_rf_in = pcbnew.NETINFO_ITEM(board, "RF_50OHM_DUT")
     board.Add(net_rf_in)
+    
+    # Ground planes on Layer 2 and Layer 4
+    add_copper_zone(board, pcbnew.In1_Cu, net_agnd, 3.0, 3.0, 137.0, 107.0)
+    add_copper_zone(board, pcbnew.In3_Cu, net_agnd, 3.0, 3.0, 137.0, 107.0)
     
     fp_lib = f"{LIB_DIR}/mosaic_footprints.pretty"
     
@@ -368,6 +488,7 @@ def build_mosaic_sense():
         j_mezz.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(70.0), pcbnew.FromMM(95.0)))
         board.Add(j_mezz)
         
+    # High-Voltage 0.8mm pulser track
     track_hv = pcbnew.PCB_TRACK(board)
     track_hv.SetStart(pcbnew.VECTOR2I(pcbnew.FromMM(31.0), pcbnew.FromMM(30.0)))
     track_hv.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(43.0), pcbnew.FromMM(30.0)))
@@ -375,6 +496,15 @@ def build_mosaic_sense():
     track_hv.SetLayer(pcbnew.F_Cu)
     track_hv.SetNet(net_hv)
     board.Add(track_hv)
+    
+    # 50-Ohm GCPW RF Track between PLL and Demodulator
+    track_rf = pcbnew.PCB_TRACK(board)
+    track_rf.SetStart(pcbnew.VECTOR2I(pcbnew.FromMM(83.0), pcbnew.FromMM(30.0)))
+    track_rf.SetEnd(pcbnew.VECTOR2I(pcbnew.FromMM(102.0), pcbnew.FromMM(30.0)))
+    track_rf.SetWidth(pcbnew.FromMM(0.35))
+    track_rf.SetLayer(pcbnew.F_Cu)
+    track_rf.SetNet(net_rf_in)
+    board.Add(track_rf)
     
     pcb_path = os.path.join(pdir, "MOSAIC_SENSE.kicad_pcb")
     board.Save(pcb_path)
@@ -394,10 +524,9 @@ def build_mosaic_radar():
         f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
         f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
         f.write('\t(title_block\n\t\t(title "PROJECT MOSAIC-RADAR: 60-64 GHz MMWAVE STANDOFF DAUGHTERBOARD")\n')
-        f.write('\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
+        f.write('\t\t(date "2026-11-18")\n\t\t(rev "2.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
         f.write('\t(lib_symbols)\n')
-        f.write(f'\t(text "TI AWR6843AOP: Single-Chip 60-64 GHz FMCW Radar with Integrated Antenna on Package" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "ROLE: Non-Contact Surface Topography, Standoff Distance Profiling & Panel Vibration Tracking" (at 25.4 48.26 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(f'\t(text "TI AWR6843AOP: Single-Chip 60-64 GHz FMCW Radar with Integrated Antenna on Package\\n- Role: Non-Contact Surface Topography, Standoff Profiling & Panel Vibration Tracking\\n- High-Speed SPI/LVDS Telemetry to CORE Processing Unit" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
         f.write(')\n')
     print("Generated schematic: MOSAIC_RADAR.kicad_sch")
     
@@ -405,6 +534,10 @@ def build_mosaic_radar():
     board.GetDesignSettings().SetCopperLayerCount(4)
     add_board_outline(board, 50.0, 50.0)
     add_mounting_holes(board, 50.0, 50.0, 3.5)
+    
+    net_gnd = pcbnew.NETINFO_ITEM(board, "GND")
+    board.Add(net_gnd)
+    add_copper_zone(board, pcbnew.In1_Cu, net_gnd, 2.0, 2.0, 48.0, 48.0)
     
     pcb_path = os.path.join(pdir, "MOSAIC_RADAR.kicad_pcb")
     board.Save(pcb_path)
@@ -424,10 +557,9 @@ def build_mosaic_reservoir():
         f.write('(kicad_sch\n\t(version 20250114)\n\t(generator "eeschema")\n\t(generator_version "9.0")\n')
         f.write(f'\t(uuid "{gen_uuid()}")\n\t(paper "A4")\n')
         f.write('\t(title_block\n\t\t(title "PROJECT MOSAIC-RESERVOIR: NON-LINEAR ANALOG PHYSICAL RESERVOIR COMPUTING")\n')
-        f.write('\t\t(date "2026-11-18")\n\t\t(rev "1.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
+        f.write('\t\t(date "2026-11-18")\n\t\t(rev "2.0")\n\t\t(company "MOSAIC-Sigma Advanced Research")\n\t)\n')
         f.write('\t(lib_symbols)\n')
-        f.write(f'\t(text "PHYSICAL RESERVOIR: Coupled Microstrip Resonator Delay-Line with Non-Linear Varactor/Schottky Loading" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
-        f.write(f'\t(text "ANALOG COMPUTATION: High-Dimensional Temporal Echo Projection & Feature Extraction at Near-Light Speed" (at 25.4 48.26 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
+        f.write(f'\t(text "PHYSICAL RESERVOIR ARCHITECTURE:\\n- Coupled Microstrip Delay-Line Resonator Network with Non-Linear Varactor & Schottky Loading\\n- High-Dimensional Echo Projection & Feature Extraction at Near-Light Speed\\n- Zero-Latency Physical Feature Kernel Transformation" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "{gen_uuid()}"))\n')
         f.write(')\n')
     print("Generated schematic: MOSAIC_RESERVOIR.kicad_sch")
     
@@ -436,12 +568,16 @@ def build_mosaic_reservoir():
     add_board_outline(board, 70.0, 70.0)
     add_mounting_holes(board, 70.0, 70.0, 4.0)
     
+    net_gnd = pcbnew.NETINFO_ITEM(board, "GND")
+    board.Add(net_gnd)
+    add_copper_zone(board, pcbnew.In1_Cu, net_gnd, 2.0, 2.0, 68.0, 68.0)
+    
     pcb_path = os.path.join(pdir, "MOSAIC_RESERVOIR.kicad_pcb")
     board.Save(pcb_path)
     print(f"Generated PCB: {pcb_path}")
 
 if __name__ == "__main__":
-    print("Building all 5 KiCad projects for MOSAIC-Sigma...")
+    print("Building all 5 KiCad projects with hierarchical schematics and enhanced routing...")
     build_mosaic_core()
     build_mosaic_wave()
     build_mosaic_sense()

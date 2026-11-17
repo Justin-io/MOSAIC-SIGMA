@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8d258a92-3ff1-4e69-813a-108f0e8eebdc")
+	(paper "A4")
+	(title_block
+		(title "MOSAIC-CORE: HIGH-SPEED MEZZANINE INTERFACES")
+		(date "2026-11-18")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(text "HIGH-SPEED MEZZANINE INTERFACES:\n- J1: Samtec QSH-060-01-L-D-A (120-Pin, SENSE Interface)\n  Carries LVDS Trigger, 65MSPS ADC Data, AD5940/ADF4351 SPI, +12V\n- J2: Samtec QSH-040-01-L-D-A (80-Pin, WAVE Interface)\n  Carries 8x Row/Col Metasurface Bias Shift Bus, +15V Varactor Rail" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "986b059a-d11e-432f-af7f-9a0d79993990"))
+)

@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0ec4a39d-0b52-453e-9e49-78e3ddd4f100")
+	(paper "A4")
+	(title_block
+		(title "MOSAIC-CORE: ZYNQ ULTRASCALE+ BANK IO & TIMEBASE")
+		(date "2026-11-18")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(text "ZYNQ ULTRASCALE+ XCZU3EG-1SFVC784E BANK ASSIGNMENT:\n- Bank 500: PS Config, JTAG, PMBUS, QSPI Flash (MT25QU256ABA)\n- Bank 501/502: Gigabit Ethernet RGMII (KSZ9031RNX), USB 2.0, UART\n- Bank 64/65/66: High-Performance PL IO (Trigger sequencer, ADC capture)\n- Timebase: SiTime SiT5356 25.0MHz +-0.5ppm VCTCXO (<250fs jitter)" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "c8fb9ab0-db18-423e-b14d-eaac26507525"))
+)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 Generate official KiCad 9.0.2 symbol and footprint libraries for MOSAIC-Sigma
+Includes embedded 3D VRML model linkages for high-fidelity mechanical CAD export.
 """
 
 import os
@@ -13,7 +14,7 @@ os.makedirs(FP_DIR, exist_ok=True)
 def gen_uuid():
     return str(uuid.uuid4())
 
-def write_bga_footprint(filename, name, rows, cols, pitch, pad_dia, body_x, body_y, depop=None):
+def write_bga_footprint(filename, name, rows, cols, pitch, pad_dia, body_x, body_y, depop=None, model_name=None):
     if depop is None:
         depop = set()
     filepath = os.path.join(FP_DIR, f"{filename}.kicad_mod")
@@ -42,9 +43,13 @@ def write_bga_footprint(filename, name, rows, cols, pitch, pad_dia, body_x, body
                 px = start_x + c * pitch
                 py = start_y + r * pitch
                 f.write(f'\t(pad "{pad_num}" smd circle (at {px:.4f} {py:.4f}) (size {pad_dia:.3f} {pad_dia:.3f}) (layers "F.Cu" "F.Paste" "F.Mask") (uuid "{gen_uuid()}"))\n')
+                
+        if model_name:
+            f.write(f'\t(model "${{KIPRJMOD}}/../04_KICAD_LIBRARIES/models_3d/{model_name}"\n')
+            f.write('\t\t(offset (xyz 0 0 0))\n\t\t(scale (xyz 1 1 1))\n\t\t(rotate (xyz 0 0 0))\n\t)\n')
         f.write(')\n')
 
-def write_qfn_footprint(filename, name, pins, pitch, body_x, body_y, pad_w, pad_l, ep_x, ep_y):
+def write_qfn_footprint(filename, name, pins, pitch, body_x, body_y, pad_w, pad_l, ep_x, ep_y, model_name=None):
     filepath = os.path.join(FP_DIR, f"{filename}.kicad_mod")
     with open(filepath, "w") as f:
         f.write(f'(footprint "{name}"\n')
@@ -89,9 +94,12 @@ def write_qfn_footprint(filename, name, pins, pitch, body_x, body_y, pad_w, pad_
             py = -body_y / 2.0
             f.write(f'\t(pad "{pnum}" smd rect (at {px:.4f} {py:.4f}) (size {pad_w:.3f} {pad_l:.3f}) (layers "F.Cu" "F.Paste" "F.Mask") (uuid "{gen_uuid()}"))\n')
             
+        if model_name:
+            f.write(f'\t(model "${{KIPRJMOD}}/../04_KICAD_LIBRARIES/models_3d/{model_name}"\n')
+            f.write('\t\t(offset (xyz 0 0 0))\n\t\t(scale (xyz 1 1 1))\n\t\t(rotate (xyz 0 0 0))\n\t)\n')
         f.write(')\n')
 
-def write_mezzanine_footprint(filename, name, pins, pitch, row_spacing):
+def write_mezzanine_footprint(filename, name, pins, pitch, row_spacing, model_name=None):
     filepath = os.path.join(FP_DIR, f"{filename}.kicad_mod")
     with open(filepath, "w") as f:
         f.write(f'(footprint "{name}"\n')
@@ -113,6 +121,9 @@ def write_mezzanine_footprint(filename, name, pins, pitch, row_spacing):
             f.write(f'\t(pad "{2*i+1}" smd rect (at {px:.4f} {-row_spacing/2:.4f}) (size 0.30 1.20) (layers "F.Cu" "F.Paste" "F.Mask") (uuid "{gen_uuid()}"))\n')
             f.write(f'\t(pad "{2*i+2}" smd rect (at {px:.4f} {row_spacing/2:.4f}) (size 0.30 1.20) (layers "F.Cu" "F.Paste" "F.Mask") (uuid "{gen_uuid()}"))\n')
             
+        if model_name:
+            f.write(f'\t(model "${{KIPRJMOD}}/../04_KICAD_LIBRARIES/models_3d/{model_name}"\n')
+            f.write('\t\t(offset (xyz 0 0 0))\n\t\t(scale (xyz 1 1 1))\n\t\t(rotate (xyz 0 0 0))\n\t)\n')
         f.write(')\n')
 
 def write_unit_cell_footprint():
@@ -138,6 +149,9 @@ def write_unit_cell_footprint():
         f.write(f'\t(pad "G2" thru_hole circle (at 4.5 -4.5) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (uuid "{gen_uuid()}"))\n')
         f.write(f'\t(pad "G3" thru_hole circle (at 4.5 4.5) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (uuid "{gen_uuid()}"))\n')
         f.write(f'\t(pad "G4" thru_hole circle (at -4.5 4.5) (size 0.6 0.6) (drill 0.3) (layers "*.Cu") (uuid "{gen_uuid()}"))\n')
+        
+        f.write('\t(model "${KIPRJMOD}/../04_KICAD_LIBRARIES/models_3d/MOSAIC_SRR_6x6mm.wrl"\n')
+        f.write('\t\t(offset (xyz 0 0 0))\n\t\t(scale (xyz 1 1 1))\n\t\t(rotate (xyz 0 0 0))\n\t)\n')
         f.write(')\n')
 
 def generate_all_footprints():
@@ -145,24 +159,24 @@ def generate_all_footprints():
     for r in range(9, 19):
         for c in range(9, 19):
             depop_zu3.add((r, c))
-    write_bga_footprint("BGA-784_23x23mm_Layout0.8mm", "BGA-784_23x23mm_Layout0.8mm", 28, 28, 0.8, 0.40, 23.0, 23.0, depop_zu3)
+    write_bga_footprint("BGA-784_23x23mm_Layout0.8mm", "BGA-784_23x23mm_Layout0.8mm", 28, 28, 0.8, 0.40, 23.0, 23.0, depop_zu3, "BGA-784_23x23mm.wrl")
     
     depop_ddr = set()
     for r in range(16):
         for c in [3, 4, 5]:
             depop_ddr.add((r, c))
-    write_bga_footprint("BGA-96_7.5x13mm_Layout0.8mm", "BGA-96_7.5x13mm_Layout0.8mm", 16, 9, 0.8, 0.42, 7.5, 13.0, depop_ddr)
+    write_bga_footprint("BGA-96_7.5x13mm_Layout0.8mm", "BGA-96_7.5x13mm_Layout0.8mm", 16, 9, 0.8, 0.42, 7.5, 13.0, depop_ddr, "BGA-96_7.5x13mm.wrl")
     
-    write_qfn_footprint("QFN-64-1EP_10x10mm_P0.5mm", "QFN-64-1EP_10x10mm_P0.5mm", 64, 0.5, 10.0, 10.0, 0.28, 0.85, 7.5, 7.5)
-    write_qfn_footprint("LFCSP-40-1EP_6x6mm_P0.5mm", "LFCSP-40-1EP_6x6mm_P0.5mm", 40, 0.5, 6.0, 6.0, 0.28, 0.80, 4.3, 4.3)
-    write_qfn_footprint("LFCSP-32-1EP_5x5mm_P0.5mm", "LFCSP-32-1EP_5x5mm_P0.5mm", 32, 0.5, 5.0, 5.0, 0.28, 0.75, 3.2, 3.2)
-    write_qfn_footprint("QFN-32-1EP_5x5mm_P0.5mm", "QFN-32-1EP_5x5mm_P0.5mm", 32, 0.5, 5.0, 5.0, 0.28, 0.75, 3.4, 3.4)
-    write_qfn_footprint("DFN-8-1EP_3x3mm_P0.65mm", "DFN-8-1EP_3x3mm_P0.65mm", 8, 0.65, 3.0, 3.0, 0.35, 0.70, 2.4, 1.7)
+    write_qfn_footprint("QFN-64-1EP_10x10mm_P0.5mm", "QFN-64-1EP_10x10mm_P0.5mm", 64, 0.5, 10.0, 10.0, 0.28, 0.85, 7.5, 7.5, "QFN-64_10x10mm.wrl")
+    write_qfn_footprint("LFCSP-40-1EP_6x6mm_P0.5mm", "LFCSP-40-1EP_6x6mm_P0.5mm", 40, 0.5, 6.0, 6.0, 0.28, 0.80, 4.3, 4.3, "LFCSP-40_6x6mm.wrl")
+    write_qfn_footprint("LFCSP-32-1EP_5x5mm_P0.5mm", "LFCSP-32-1EP_5x5mm_P0.5mm", 32, 0.5, 5.0, 5.0, 0.28, 0.75, 3.2, 3.2, "LFCSP-32_5x5mm.wrl")
+    write_qfn_footprint("QFN-32-1EP_5x5mm_P0.5mm", "QFN-32-1EP_5x5mm_P0.5mm", 32, 0.5, 5.0, 5.0, 0.28, 0.75, 3.4, 3.4, "QFN-32_5x5mm.wrl")
+    write_qfn_footprint("DFN-8-1EP_3x3mm_P0.65mm", "DFN-8-1EP_3x3mm_P0.65mm", 8, 0.65, 3.0, 3.0, 0.35, 0.70, 2.4, 1.7, "DFN-8_3x3mm.wrl")
     
-    write_mezzanine_footprint("Samtec_QSH-060-01-L-D-A", "Samtec_QSH-060-01-L-D-A", 120, 0.5, 3.8)
-    write_mezzanine_footprint("Samtec_QTH-060-01-L-D-A", "Samtec_QTH-060-01-L-D-A", 120, 0.5, 3.8)
-    write_mezzanine_footprint("Samtec_QSH-040-01-L-D-A", "Samtec_QSH-040-01-L-D-A", 80, 0.5, 3.8)
-    write_mezzanine_footprint("Samtec_QTH-040-01-L-D-A", "Samtec_QTH-040-01-L-D-A", 80, 0.5, 3.8)
+    write_mezzanine_footprint("Samtec_QSH-060-01-L-D-A", "Samtec_QSH-060-01-L-D-A", 120, 0.5, 3.8, "Samtec_QSH-060.wrl")
+    write_mezzanine_footprint("Samtec_QTH-060-01-L-D-A", "Samtec_QTH-060-01-L-D-A", 120, 0.5, 3.8, "Samtec_QTH-060.wrl")
+    write_mezzanine_footprint("Samtec_QSH-040-01-L-D-A", "Samtec_QSH-040-01-L-D-A", 80, 0.5, 3.8, "Samtec_QSH-040.wrl")
+    write_mezzanine_footprint("Samtec_QTH-040-01-L-D-A", "Samtec_QTH-040-01-L-D-A", 80, 0.5, 3.8, "Samtec_QTH-040.wrl")
     
     write_unit_cell_footprint()
 

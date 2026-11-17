@@ -1,7 +1,19 @@
 ** Drc report for MOSAIC_CORE.kicad_pcb **
-** Created on 2026-11-18T02:17:42+0530 **
+** Created on 2026-11-18T02:34:35+0530 **
 
-** Found 9 DRC violations **
+** Found 13 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(72.0000 mm, 50.4000 mm): Track [<no net>] on In2.Cu, length 13.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(72.0000 mm, 48.8000 mm): Track [<no net>] on In2.Cu, length 13.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(72.0000 mm, 48.0000 mm): Track [<no net>] on In2.Cu, length 13.0000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(72.0000 mm, 49.6000 mm): Track [<no net>] on In2.Cu, length 13.0000 mm
 [track_dangling]: Track has unconnected end
     Local override; warning
     @(48.0000 mm, 38.0000 mm): Track [TRIG_SYNC_P] on F.Cu, length 23.4307 mm
@@ -14,22 +26,22 @@
     @(48.0000 mm, 38.0000 mm): Track [TRIG_SYNC_P] on F.Cu, length 23.4307 mm
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(115.0000 mm, 95.0000 mm): Reference field of MH3
+    @(115.0000 mm, 5.0000 mm): Reference field of MH2
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(18.0000 mm, 77.5000 mm): Rectangle of J2 on F.Silkscreen
+    @(115.0000 mm, 95.0000 mm): Reference field of MH3
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(5.0000 mm, 5.0000 mm): Reference field of MH1
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(115.0000 mm, 5.0000 mm): Reference field of MH2
+    @(5.0000 mm, 95.0000 mm): Reference field of MH4
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(13.0000 mm, 17.5000 mm): Rectangle of J1 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(5.0000 mm, 95.0000 mm): Reference field of MH4
+    @(18.0000 mm, 77.5000 mm): Rectangle of J2 on F.Silkscreen
 
 ** Found 0 unconnected pads **
 

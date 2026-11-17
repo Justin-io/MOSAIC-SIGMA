@@ -1,15 +1,29 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,9.0.2+dfsg-1*%
-%TF.CreationDate,2026-11-18T02:17:44+05:30*%
+%TF.CreationDate,2026-11-18T02:34:37+05:30*%
 %TF.ProjectId,MOSAIC_CORE,4d4f5341-4943-45f4-934f-52452e6b6963,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L3,Inr*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.2+dfsg-1) date 2026-11-18 02:17:44*
+G04 Created by KiCad (PCBNEW 9.0.2+dfsg-1) date 2026-11-18 02:34:37*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+%TA.AperFunction,Conductor*%
+%ADD10C,0.100000*%
+%TD*%
 G04 APERTURE END LIST*
+D10*
+%TO.N,*%
+X72000000Y-50400000D02*
+X85000000Y-50400000D01*
+X72000000Y-48800000D02*
+X85000000Y-48800000D01*
+X72000000Y-48000000D02*
+X85000000Y-48000000D01*
+X72000000Y-49600000D02*
+X85000000Y-49600000D01*
+%TD*%
 M02*

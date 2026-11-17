@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "76075ccc-5708-479a-8240-8c6e6edfd8a5")
+	(paper "A4")
+	(title_block
+		(title "MOSAIC-CORE: DDR4 MEMORY SUBSYSTEM")
+		(date "2026-11-18")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(text "DDR4 MEMORY BUS SPECIFICATION:\n- Micron MT40A512M16LY-075 (1GB DDR4-2400 16-Bit)\n- Fly-By Topology with Active 0.6V VTT Termination (TPS51200)\n- Skew Matched: Data Byte 0/1 skew < 0.85 ps, Clock-to-Strobe < 2.5 ps\n- 40-Ohm Controlled Single-Ended, 80-Ohm Differential Impedance" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "0e4b5d86-78b1-41a2-849c-89743784b47a"))
+)

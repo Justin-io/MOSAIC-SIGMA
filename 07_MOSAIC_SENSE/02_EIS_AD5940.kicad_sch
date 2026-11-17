@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ae4c4db4-9f58-49d7-a33a-32ed8ed885fb")
+	(paper "A4")
+	(title_block
+		(title "MOSAIC-SENSE: ELECTROCHEMICAL IMPEDANCE SPECTROSCOPY")
+		(date "2026-11-18")
+		(rev "1.0")
+	)
+	(lib_symbols)
+	(text "IMPEDANCE SPECTROMETER (EIS) SUBSYSTEM:\n- AD5940BCPZ: 0.016 Hz - 200 kHz High Precision Impedance Engine\n- 4-Wire Kelvin Potentiostat / Galvanostat Topology (CE0, RE0, WE0, SE0)\n- On-Board 10.0kOhm 0.05%% Precision Calibration Resistor (R_CAL)\n- Surface Moisture, Resin Degradation & Fiber Alignment Extraction" (at 25.4 38.1 0) (effects (font (size 2.0 2.0) (bold yes))) (uuid "415b525d-4b1c-4a33-9b6f-ed7b71c41ce5"))
+)

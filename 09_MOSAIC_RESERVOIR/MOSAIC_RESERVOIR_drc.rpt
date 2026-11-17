@@ -1,16 +1,16 @@
 ** Drc report for MOSAIC_RESERVOIR.kicad_pcb **
-** Created on 2026-11-18T02:17:55+0530 **
+** Created on 2026-11-18T02:34:49+0530 **
 
 ** Found 4 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(4.0000 mm, 4.0000 mm): Reference field of MH1
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(66.0000 mm, 66.0000 mm): Reference field of MH3
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(4.0000 mm, 66.0000 mm): Reference field of MH4
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(4.0000 mm, 4.0000 mm): Reference field of MH1
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(66.0000 mm, 4.0000 mm): Reference field of MH2
