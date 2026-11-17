@@ -1,0 +1,38 @@
+** Drc report for MOSAIC_CORE.kicad_pcb **
+** Created on 2026-11-18T02:17:42+0530 **
+
+** Found 9 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(48.0000 mm, 38.0000 mm): Track [TRIG_SYNC_P] on F.Cu, length 23.4307 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(48.0000 mm, 38.2500 mm): Track [TRIG_SYNC_N] on F.Cu, length 23.4307 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0871 mm)
+    Rule: netclass 'Default'; error
+    @(48.0000 mm, 38.2500 mm): Track [TRIG_SYNC_N] on F.Cu, length 23.4307 mm
+    @(48.0000 mm, 38.0000 mm): Track [TRIG_SYNC_P] on F.Cu, length 23.4307 mm
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(115.0000 mm, 95.0000 mm): Reference field of MH3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(18.0000 mm, 77.5000 mm): Rectangle of J2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.0000 mm, 5.0000 mm): Reference field of MH1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(115.0000 mm, 5.0000 mm): Reference field of MH2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(13.0000 mm, 17.5000 mm): Rectangle of J1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.0000 mm, 95.0000 mm): Reference field of MH4
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

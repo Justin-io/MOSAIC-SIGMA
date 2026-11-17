@@ -1,0 +1,113 @@
+ERC report (2026-11-18T02:17:48+0530, Encoding UTF8)
+
+***** Sheet /
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 85.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 85.00 mm): Label 'HV_PULSE_OUT'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 92.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 92.00 mm): Label 'US_ECHO_IN'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 99.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 99.00 mm): Label 'LNA_OUT'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 106.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 106.00 mm): Label 'RF_DUT_IN'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 85.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 113.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 113.00 mm): Label 'RF_CAL_SHORT'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 92.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 120.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 120.00 mm): Label 'RF_CAL_OPEN'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 99.00 mm): Horizontal Wire, length 45.00 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 106.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 127.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 127.00 mm): Label 'RF_CAL_LOAD'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 113.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 134.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 134.00 mm): Label 'EIS_CE0'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 120.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 141.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 141.00 mm): Label 'EIS_RE0'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 127.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 148.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 148.00 mm): Label 'EIS_WE0'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 134.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 155.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 155.00 mm): Label 'EIS_SE0'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 141.00 mm): Horizontal Wire, length 45.00 mm
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(30.00 mm, 162.00 mm): Horizontal Wire, length 45.00 mm
+[label_dangling]: Label not connected to anything
+    ; error
+    @(30.00 mm, 162.00 mm): Label 'ADC_CLK_65M'
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 148.00 mm): Horizontal Wire, length 45.00 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 155.00 mm): Horizontal Wire, length 45.00 mm
+[unconnected_wire_endpoint]: Unconnected wire endpoint
+    ; warning
+    @(30.00 mm, 162.00 mm): Horizontal Wire, length 45.00 mm
+
+ ** ERC messages: 36  Errors 12  Warnings 24

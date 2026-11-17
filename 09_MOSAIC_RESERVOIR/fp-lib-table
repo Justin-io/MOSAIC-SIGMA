@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "mosaic_footprints") (type "KiCad") (uri "/home/justin/MOSAIC-SIGMA/04_KICAD_LIBRARIES/mosaic_footprints.pretty") (options "") (descr "MOSAIC-Sigma Custom Footprints"))
+)

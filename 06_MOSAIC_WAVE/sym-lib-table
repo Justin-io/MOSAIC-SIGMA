@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "mosaic_symbols") (type "KiCad") (uri "/home/justin/MOSAIC-SIGMA/04_KICAD_LIBRARIES/mosaic_symbols.kicad_sym") (options "") (descr "MOSAIC-Sigma Custom Symbols"))
+)

@@ -1,0 +1,22 @@
+** Drc report for MOSAIC_RADAR.kicad_pcb **
+** Created on 2026-11-18T02:17:52+0530 **
+
+** Found 4 DRC violations **
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.5000 mm, 3.5000 mm): Reference field of MH2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.5000 mm, 3.5000 mm): Reference field of MH1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(46.5000 mm, 46.5000 mm): Reference field of MH3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(3.5000 mm, 46.5000 mm): Reference field of MH4
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

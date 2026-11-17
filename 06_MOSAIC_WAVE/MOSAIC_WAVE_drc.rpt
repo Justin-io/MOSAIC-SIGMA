@@ -1,0 +1,1561 @@
+** Drc report for MOSAIC_WAVE.kicad_pcb **
+** Created on 2026-11-18T02:17:45+0530 **
+
+** Found 389 DRC violations **
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 194.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 200.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 200.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 194.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 194.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 200.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 194.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 200.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 19.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 25.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 19.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 25.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 44.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 50.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 44.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 50.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 44.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 50.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 50.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 44.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 194.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 200.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 194.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 200.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 69.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 75.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 69.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 75.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 69.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 75.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 69.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 75.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 144.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 150.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 150.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 144.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 19.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 25.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 19.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 25.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 69.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 75.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 69.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 75.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 169.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 175.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 169.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 175.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 169.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 175.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 169.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 175.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 94.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 100.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 100.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 94.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 94.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 100.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 94.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 100.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 194.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 200.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 194.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 200.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 44.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 50.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 44.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 50.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 19.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 25.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 19.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 25.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 169.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 175.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 175.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 169.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 44.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 50.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 44.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 50.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 169.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 175.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 175.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 169.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 19.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 25.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 19.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 25.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 44.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 50.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 44.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 50.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 19.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 25.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 19.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 25.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 19.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 25.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 25.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 19.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 194.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 200.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 200.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 194.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 119.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 125.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 119.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 125.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 144.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 150.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 144.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 150.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 94.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 100.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 94.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 100.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 94.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 100.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 94.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 100.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 94.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 100.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 94.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 100.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 144.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 150.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 144.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 150.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 94.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 100.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 94.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 100.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 194.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 200.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 194.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 200.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 44.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 50.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 44.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 50.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 44.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 50.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 44.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 50.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 119.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 125.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 119.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 125.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 69.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 75.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 69.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 75.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 169.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 175.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 169.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 175.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 144.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 150.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 144.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 150.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 119.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 125.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 119.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 125.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 169.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 175.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 175.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 169.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 69.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 75.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 69.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 75.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 119.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 125.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 119.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 125.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 169.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 175.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 169.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 175.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 69.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 75.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 69.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 75.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 119.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 125.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 119.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 125.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 94.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 100.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 100.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 94.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 144.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 150.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 144.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 150.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 144.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 150.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 144.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(169.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 150.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 194.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 200.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 194.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 200.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 119.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 125.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 119.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 125.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 94.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 100.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 94.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(119.5000 mm, 97.5000 mm): Pad K_MID [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 100.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 19.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 25.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 19.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 25.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 69.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 75.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 69.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 75.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 19.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 25.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 19.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 22.5000 mm): Pad K_MID [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 25.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 69.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 75.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 69.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 72.5000 mm): Pad K_MID [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 75.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 119.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 125.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 119.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 125.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 44.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 50.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 44.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(69.5000 mm, 47.5000 mm): Pad K_MID [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 50.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 144.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 150.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 144.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(19.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 150.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 144.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 150.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 144.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(94.5000 mm, 147.5000 mm): Pad K_MID [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 150.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 169.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 175.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 169.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(194.5000 mm, 172.5000 mm): Pad K_MID [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 175.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 194.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 200.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 194.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(44.5000 mm, 197.5000 mm): Pad K_MID [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 200.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 119.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 125.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 119.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(144.5000 mm, 122.5000 mm): Pad K_MID [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 125.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(214.0000 mm, 6.0000 mm): Reference field of MH2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(98.0000 mm, 207.5000 mm): Rectangle of J_MEZZ1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(214.0000 mm, 214.0000 mm): Reference field of MH3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.0000 mm, 6.0000 mm): Reference field of MH1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(6.0000 mm, 214.0000 mm): Reference field of MH4
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 194.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL60 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 200.5000 mm): Segment [<no net>] of CELL60 on F.Cu
+    @(94.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL60 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 194.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL63 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 200.5000 mm): Segment [<no net>] of CELL63 on F.Cu
+    @(169.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL63 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 19.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 25.5000 mm): Segment [<no net>] of CELL4 on F.Cu
+    @(94.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 44.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL15 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 50.5000 mm): Segment [<no net>] of CELL15 on F.Cu
+    @(169.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL15 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 44.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 50.5000 mm): Segment [<no net>] of CELL14 on F.Cu
+    @(144.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 194.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL57 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 200.5000 mm): Segment [<no net>] of CELL57 on F.Cu
+    @(19.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL57 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 69.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL24 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 75.5000 mm): Segment [<no net>] of CELL24 on F.Cu
+    @(194.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL24 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 69.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL23 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 75.5000 mm): Segment [<no net>] of CELL23 on F.Cu
+    @(169.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL23 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 144.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL46 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 150.5000 mm): Segment [<no net>] of CELL46 on F.Cu
+    @(144.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL46 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 19.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 25.5000 mm): Segment [<no net>] of CELL6 on F.Cu
+    @(144.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 69.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL22 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 75.5000 mm): Segment [<no net>] of CELL22 on F.Cu
+    @(144.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL22 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 169.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL55 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 175.5000 mm): Segment [<no net>] of CELL55 on F.Cu
+    @(169.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL55 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 169.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL51 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 175.5000 mm): Segment [<no net>] of CELL51 on F.Cu
+    @(69.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL51 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 94.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL31 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 100.5000 mm): Segment [<no net>] of CELL31 on F.Cu
+    @(169.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL31 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 94.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL32 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 100.5000 mm): Segment [<no net>] of CELL32 on F.Cu
+    @(194.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL32 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 194.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL62 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 200.5000 mm): Segment [<no net>] of CELL62 on F.Cu
+    @(144.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL62 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 44.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 50.5000 mm): Segment [<no net>] of CELL10 on F.Cu
+    @(44.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 19.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL7 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 25.5000 mm): Segment [<no net>] of CELL7 on F.Cu
+    @(169.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL7 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 169.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL54 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 175.5000 mm): Segment [<no net>] of CELL54 on F.Cu
+    @(144.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL54 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 44.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL16 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 50.5000 mm): Segment [<no net>] of CELL16 on F.Cu
+    @(194.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL16 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 169.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL53 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 175.5000 mm): Segment [<no net>] of CELL53 on F.Cu
+    @(119.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL53 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 19.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 25.5000 mm): Segment [<no net>] of CELL5 on F.Cu
+    @(119.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 44.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 50.5000 mm): Segment [<no net>] of CELL13 on F.Cu
+    @(119.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 19.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 25.5000 mm): Segment [<no net>] of CELL8 on F.Cu
+    @(194.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 19.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 25.5000 mm): Segment [<no net>] of CELL2 on F.Cu
+    @(44.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 194.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL61 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 200.5000 mm): Segment [<no net>] of CELL61 on F.Cu
+    @(119.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL61 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 119.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL37 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 125.5000 mm): Segment [<no net>] of CELL37 on F.Cu
+    @(119.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL37 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 144.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 150.5000 mm): Segment [<no net>] of CELL43 on F.Cu
+    @(69.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 94.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL30 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 100.5000 mm): Segment [<no net>] of CELL30 on F.Cu
+    @(144.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL30 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 94.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL27 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 100.5000 mm): Segment [<no net>] of CELL27 on F.Cu
+    @(69.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL27 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 94.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL28 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 100.5000 mm): Segment [<no net>] of CELL28 on F.Cu
+    @(94.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL28 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 144.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL48 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 150.5000 mm): Segment [<no net>] of CELL48 on F.Cu
+    @(194.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL48 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 94.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL25 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 100.5000 mm): Segment [<no net>] of CELL25 on F.Cu
+    @(19.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL25 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 194.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL64 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 200.5000 mm): Segment [<no net>] of CELL64 on F.Cu
+    @(194.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL64 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 44.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL12 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 50.5000 mm): Segment [<no net>] of CELL12 on F.Cu
+    @(94.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL12 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 44.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 50.5000 mm): Segment [<no net>] of CELL9 on F.Cu
+    @(19.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL9 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 119.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL40 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 125.5000 mm): Segment [<no net>] of CELL40 on F.Cu
+    @(194.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL40 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 69.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL17 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 75.5000 mm): Segment [<no net>] of CELL17 on F.Cu
+    @(19.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL17 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 169.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL52 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 175.5000 mm): Segment [<no net>] of CELL52 on F.Cu
+    @(94.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL52 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 144.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL45 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 150.5000 mm): Segment [<no net>] of CELL45 on F.Cu
+    @(119.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL45 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 119.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL33 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 125.5000 mm): Segment [<no net>] of CELL33 on F.Cu
+    @(19.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL33 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 169.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL49 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 175.5000 mm): Segment [<no net>] of CELL49 on F.Cu
+    @(19.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL49 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 69.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL21 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 75.5000 mm): Segment [<no net>] of CELL21 on F.Cu
+    @(119.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL21 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 119.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL39 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 125.5000 mm): Segment [<no net>] of CELL39 on F.Cu
+    @(169.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL39 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 169.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 175.5000 mm): Segment [<no net>] of CELL50 on F.Cu
+    @(44.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 69.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL19 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 75.5000 mm): Segment [<no net>] of CELL19 on F.Cu
+    @(69.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL19 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 119.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL35 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 125.5000 mm): Segment [<no net>] of CELL35 on F.Cu
+    @(69.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL35 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 94.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL26 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 100.5000 mm): Segment [<no net>] of CELL26 on F.Cu
+    @(44.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL26 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 144.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 150.5000 mm): Segment [<no net>] of CELL42 on F.Cu
+    @(44.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 144.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL47 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(169.5000 mm, 150.5000 mm): Segment [<no net>] of CELL47 on F.Cu
+    @(169.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL47 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 194.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL59 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 200.5000 mm): Segment [<no net>] of CELL59 on F.Cu
+    @(69.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL59 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 119.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL34 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 125.5000 mm): Segment [<no net>] of CELL34 on F.Cu
+    @(44.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL34 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 94.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 96.5000 mm): Pad A1 [<no net>] of CELL29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(119.5000 mm, 100.5000 mm): Segment [<no net>] of CELL29 on F.Cu
+    @(119.5000 mm, 98.5000 mm): Pad A2 [<no net>] of CELL29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 19.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 25.5000 mm): Segment [<no net>] of CELL3 on F.Cu
+    @(69.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 69.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL18 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 75.5000 mm): Segment [<no net>] of CELL18 on F.Cu
+    @(44.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL18 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 19.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 21.5000 mm): Pad A1 [<no net>] of CELL1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 25.5000 mm): Segment [<no net>] of CELL1 on F.Cu
+    @(19.5000 mm, 23.5000 mm): Pad A2 [<no net>] of CELL1 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 69.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 71.5000 mm): Pad A1 [<no net>] of CELL20 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 75.5000 mm): Segment [<no net>] of CELL20 on F.Cu
+    @(94.5000 mm, 73.5000 mm): Pad A2 [<no net>] of CELL20 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 119.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL36 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 125.5000 mm): Segment [<no net>] of CELL36 on F.Cu
+    @(94.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL36 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 44.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 46.5000 mm): Pad A1 [<no net>] of CELL11 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(69.5000 mm, 50.5000 mm): Segment [<no net>] of CELL11 on F.Cu
+    @(69.5000 mm, 48.5000 mm): Pad A2 [<no net>] of CELL11 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 144.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL41 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(19.5000 mm, 150.5000 mm): Segment [<no net>] of CELL41 on F.Cu
+    @(19.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL41 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 144.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 146.5000 mm): Pad A1 [<no net>] of CELL44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(94.5000 mm, 150.5000 mm): Segment [<no net>] of CELL44 on F.Cu
+    @(94.5000 mm, 148.5000 mm): Pad A2 [<no net>] of CELL44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 169.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 171.5000 mm): Pad A1 [<no net>] of CELL56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(194.5000 mm, 175.5000 mm): Segment [<no net>] of CELL56 on F.Cu
+    @(194.5000 mm, 173.5000 mm): Pad A2 [<no net>] of CELL56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 194.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 196.5000 mm): Pad A1 [<no net>] of CELL58 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.5000 mm, 200.5000 mm): Segment [<no net>] of CELL58 on F.Cu
+    @(44.5000 mm, 198.5000 mm): Pad A2 [<no net>] of CELL58 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 119.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 121.5000 mm): Pad A1 [<no net>] of CELL38 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(144.5000 mm, 125.5000 mm): Segment [<no net>] of CELL38 on F.Cu
+    @(144.5000 mm, 123.5000 mm): Pad A2 [<no net>] of CELL38 on F.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

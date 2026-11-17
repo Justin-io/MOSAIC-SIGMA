@@ -1,0 +1,96 @@
+** Drc report for MOSAIC_SENSE.kicad_pcb **
+** Created on 2026-11-18T02:17:49+0530 **
+
+** Found 25 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(31.0000 mm, 30.0000 mm): Track [HV_PULSE_100V] on F.Cu, length 12.0000 mm
+[shorting_items]: Items shorting two nets (nets  and HV_PULSE_100V)
+    Local override; error
+    @(43.5000 mm, 29.6750 mm): Pad 1 [<no net>] of U2 on F.Cu
+    @(31.0000 mm, 30.0000 mm): Track [HV_PULSE_100V] on F.Cu, length 12.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(43.5000 mm, 29.6750 mm): Pad 1 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(43.5000 mm, 30.3250 mm): Pad 2 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(46.5000 mm, 30.3250 mm): Pad 5 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: netclass 'Default'; error
+    @(46.5000 mm, 29.6750 mm): Pad 6 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(102.5000 mm, 27.5000 mm): Rectangle of U5 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(103.1000 mm, 26.9000 mm): Circle of U5 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(77.5000 mm, 27.5000 mm): Rectangle of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(78.1000 mm, 26.9000 mm): Circle of U4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.0000 mm, 72.0000 mm): Rectangle of U3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(22.6000 mm, 71.4000 mm): Circle of U3 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(43.5000 mm, 28.5000 mm): Rectangle of U2 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.0000 mm, 92.5000 mm): Rectangle of J_MEZZ_SENSE on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(135.0000 mm, 105.0000 mm): Reference field of MH3
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(135.0000 mm, 5.0000 mm): Reference field of MH2
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.0000 mm, 5.0000 mm): Reference field of MH1
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(5.0000 mm, 105.0000 mm): Reference field of MH4
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(20.0000 mm, 25.0000 mm): Rectangle of U1 on F.Silkscreen
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(31.0000 mm, 30.0000 mm): Track [HV_PULSE_100V] on F.Cu, length 12.0000 mm
+    @(43.5000 mm, 29.6750 mm): Pad 1 [<no net>] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(31.0000 mm, 30.0000 mm): Track [HV_PULSE_100V] on F.Cu, length 12.0000 mm
+    @(43.5000 mm, 30.3250 mm): Pad 2 [<no net>] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.5000 mm, 29.6750 mm): Pad 1 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(43.5000 mm, 30.3250 mm): Pad 2 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.5000 mm, 30.3250 mm): Pad 5 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.5000 mm, 29.6750 mm): Pad 6 [<no net>] of U2 on F.Cu
+    @(45.0000 mm, 30.0000 mm): Pad 9 [<no net>] of U2 on F.Cu
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **
