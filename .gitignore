@@ -6,7 +6,9 @@ test_firmware_drivers
 __pycache__/
 *.pyc
 
-# KiCad Temporary / Backup Files
+# KiCad Temporary / Backup / Lock Files
+*.lck
+~*
 *-bak
 *.kicad_prl
 *.kicad_pcb-bak
